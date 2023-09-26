@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+  --primaryCyan: hsl(185, 70%, 17%);
+  --primaryDesaturatedBlue: hsl(229, 58%, 54%);
+  --primaryGrayishBlue: hsl(180, 75%, 45%);
+  --neutralDarkGray: hsl(0, 0%, 59%);
+}
+
+* {
+  font-family: "Kumbh Sans", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: rgb(202, 202, 160);
+  font-weight: bold;
+}
+
+nav {
+  background-color: var(--black);
+  top: 0;
+}
+
+.cardImage {
+  height: 130px;
+  background: var(--primaryCyan) url(../public/images/bullseye-gradient.svg);
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.cardImage img {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
